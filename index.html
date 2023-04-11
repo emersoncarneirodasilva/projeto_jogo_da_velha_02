@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons8-hashtag-grande-50.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Jogo da Velha</title>
+  </head>
+
+  <body>
+    <h1>Jogo da Velha</h1>
+
+    <!-- Botões de escolha para começar -->
+    <div id="buttons-container">
+      <button id="2-players" class="two-players">2 Jogadores</button>
+      <button id="ai-player" class="ai-player">Contra IA</button>
+    </div>
+
+    <!-- Parte central -->
+    <div id="container" class="hide">
+      <div id="block-1" class="box"></div>
+      <div id="block-2" class="box"></div>
+      <div id="block-3" class="box"></div>
+      <div id="block-4" class="box"></div>
+      <div id="block-5" class="box"></div>
+      <div id="block-6" class="box"></div>
+      <div id="block-7" class="box"></div>
+      <div id="block-8" class="box"></div>
+      <div id="block-9" class="box"></div>
+      <!-- Placar -->
+      <div id="scoreboard-container">
+        <h2>Placar:</h2>
+        <span class="score-box">
+          <span id="x-scoreboard">X</span>:
+          <span id="scoreboard-1">0</span>
+        </span>
+        <span class="score-box">
+          <span id="o-scoreboard"></span>:
+          <span id="scoreboard-2">0</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Elementos "X" e "O" -->
+    <div class="hide">
+      <div class="x">X</div>
+      <div class="o"></div>
+    </div>
+
+    <!-- Mensagem que será exibida ao final de uma partida -->
+    <div id="message" class="hide">
+      <p></p>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
